@@ -83,7 +83,7 @@ function isValidDate() {
     console.log('Day difference: ', dayDifference)
     if(dayDifference < 0){
       birthInfoDiv.style.opacity = 1;
-      birthInfoDiv.innerHTML = `The date must be less or equal to today's date.`;
+      birthInfoDiv.innerHTML = `The date must be less than or equal to today's date.`;
       return false;
     } else return true;
   }
