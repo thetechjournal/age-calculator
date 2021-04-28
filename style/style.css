@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Signika', sans-serif;
+    letter-spacing: 1px;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgb(28, 41, 138), transparent 30%), #3b94c7 ;
+}
+
+.container {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 60vh;
+  min-width: 400px;
+  max-width: 500px;
+  min-height: 300px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 1em;
+  background-image: url(../images/hourglass.jpg);
+  background-color: rgb(8, 61, 104);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+
+input {
+    font-family: inherit;
+    font-size: 1.1rem;
+    letter-spacing: inherit;
+    max-width: 55%;
+    border: none;
+    margin: 1rem;
+    padding: 0.8rem 0.9rem;
+    border-radius: 5px;
+}
+
+#days {
+    font-size: 1.2rem;
+    padding-top: 25px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    opacity: 0;
+}
+
+.button {
+    margin-top: 20px;
+    position: relative;
+    display: block;
+    background: white;
+    padding: 5px 30px;
+    z-index: 1;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    background-color: #1b639e;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform-origin: bottom left;
+    transform: translateY(-10rem);
+    transition: transform 0.5s;
+}
+
+.button:hover {
+    color: white;
+}
+
+.button:hover:before {
+    transform: translateY(0px);
+}
+
+.btn-set {
+    display: flex;
+    flex-direction: row;
+}
+
+
